@@ -1,0 +1,22 @@
+<html><head>
+<script>
+function showWidget() { 
+turnstile.render('#myWidget', {
+sitekey: '0x4AAAAAABgxfUUSzYakb-Pd',
+theme: 'light',
+callback: function (token) {
+     const parser = new URL(window.location);
+     parser.searchParams.set('token', token);
+     window.location = parser.href;
+   },
+});
+}
+</script>
+</head><body>
+<style>body, h1, h2, h3, h4, h5, h6  { font-family: Helvetica, Arial, sans-serif; }</style>
+
+<h4>The Genome Browser is protecting itself from bots. This will just take a few seconds.</h4>
+<small>If you are a bot and were made for a research project, please contact us by email.</small>
+<script src='https://challenges.cloudflare.com/turnstile/v0/api.js?onload=showWidget' async defer></script>
+<div id='myWidget'></div>
+</body></html>
