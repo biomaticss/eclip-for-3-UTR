@@ -1,6 +1,6 @@
 # eCLIP Data Analysis Workflow
 
-> **Project Goal**: Analyze the binding sites of RNA-binding proteins (RBPs) `PTBP1`, `DDX3X`, `ELAVL1`, and `PABPN1` on genes `STAT5B`, `GSPT1`, `CCND2`, and `CTNNBIP1`, focusing on signal intensity near proximal polyadenylation sites (PAS) (±500 bp), and generate clear visualization plots.
+> **Project Goal**: Analyze the binding sites of RNA-binding proteins (RBPs) `PTBP1`, `DDX3X`, `ELAVL1`, and `PABPN1` on genes `STAT5B`, `GSPT1`, `CCND2`, and `CTNNBIP1`, focusing on signal intensity near proximal polyadenylation sites (PAS) (±200 bp), and generate clear visualization plots.
 
 ---
 
@@ -164,7 +164,7 @@ eclip.py
     - Green solid line: Primary strand signal (plus for + strand, minus for - strand, y=1.5 offset).
     - Orange dashed line: Secondary strand signal (minus for + strand, plus for - strand, y=2.0 offset).
   - **Red Dashed Line**: Proximal PAS position.
-- **X-Axis**: PAS ±500 bp.
+- **X-Axis**: PAS ±200 bp.
 - **Y-Axis**: Peak positions and signal intensity.
 
 ### 6.2 Example Plot
